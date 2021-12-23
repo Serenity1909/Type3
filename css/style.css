@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  margin-bottom: 5px;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+header {
+  text-align: center;
+  background-color: #61a0c5;
+  width: 100%;
+  padding: 50px;
+}
+
+footer {
+  padding: 5px;
+  background-color: black;
+  bottom: 0;
+  text-align: right;
+  width: 100%;
+}
+
+.copyright,
+.mail {
+  padding: 8px;
+  color: white;
+  font-size: 0.7rem;
+}
+
+.mail {
+  float: left;
+}
+/* ----- */
+/* Leçon */
+/* ----- */
+
+.texto {
+  /* font-family: Century Gothic*/
+  text-align: justify;
+  margin: 25px;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.italik {
+  font-style: italic;
+}
+
+.premier {
+  margin-left: 30px;
+}
+
+.deuxieme {
+  margin-left: 50px;
+}
+.contenu {
+  margin-top: 10px;
+}
+
+.lecon {
+  background-color: rgba(255, 255, 255, 0.459);
+  margin: auto;
+  border: 2px solid rgba(255, 255, 255, 0.151);
+  border-radius: 100px;
+  box-shadow: 10px 10px 8px rgba(255, 255, 255, 0.479);
+  width: 70%;
+}
+.persoDiscu {
+  width: 150px;
+}
+
+.discu {
+  background: cornflowerblue;
+  padding: 10px 20px;
+  border-radius: 30px;
+  line-height: 30px;
+  text-align: justify;
+  width: 50%;
+  height: 100%;
+}
+
+.discussion {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.d {
+  justify-content: right;
+}
+
+.btn {
+  display: flex;
+  margin: auto;
+  width: 71%;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+.btnSuivant,
+.btnPrece {
+  z-index: 10;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #185180;
+  box-shadow: 3px 3px 10px #000000;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+}
+
+.btnSuivant {
+  margin-right: 15px;
+}
+.btnPrece {
+  margin-left: 15px;
+}
+
+/* ---------- */
+/* Responsive */
+/* ---------- */
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+  header {
+    padding: 10px;
+  }
+
+  .lecon {
+    width: 95%;
+    box-shadow: none;
+  }
+  .persoDiscu {
+    width: 100px;
+  }
+
+  .discu {
+    font-size: 12px;
+    width: 60%;
+  }
+
+  .btnPrece,
+  .btnSuivant {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  footer {
+    position: relative;
+  }
+  .btn {
+    margin-bottom: 10px;
+  }
+
+  .lecon {
+    border-radius: 50px;
+  }
+
+  .discu {
+    border-radius: 20px;
+  }
+}
