@@ -1,5 +1,5 @@
 const menu = document.querySelector(".wrapper");
-const bubble = document.querySelector(".bubble-text");
+const link = document.querySelector(".links");
 const main = document.querySelector(".main");
 console.log(window);
 
@@ -12,5 +12,13 @@ window.addEventListener("scroll", () => {
     menu.style.transform = "translateY(0px)";
     menu.style.position = "static";
     main.style.paddingTop = "0px";
+  }
+
+  if (window.innerWidth < 1200) {
+    if (window.scrollY > 1) {
+      link.style.minHeight = "650px";
+      link.style.marginTop = "-105px";
+      link.style.transition = "0.3s";
+    }
   }
 });

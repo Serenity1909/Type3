@@ -22,9 +22,10 @@ header {
 footer {
   padding: 5px;
   background-color: black;
-  bottom: 0;
   text-align: right;
   width: 100%;
+  z-index: 10;
+  bottom: 0;
 }
 
 .copyright,
@@ -37,6 +38,7 @@ footer {
 .mail {
   float: left;
 }
+
 /* ----- */
 /* Leçon */
 /* ----- */
@@ -62,6 +64,7 @@ footer {
 }
 .contenu {
   margin-top: 10px;
+  width: 80%;
 }
 
 .lecon {
@@ -88,7 +91,7 @@ footer {
 
 .discussion {
   display: flex;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 
@@ -99,21 +102,18 @@ footer {
 .btn {
   display: flex;
   margin: auto;
-  width: 71%;
+  width: 20%;
   justify-content: center;
-  margin-bottom: 10px;
   margin-top: 40px;
 }
 .btnSuivant,
 .btnPrece {
   z-index: 10;
   margin: auto;
-  margin-top: 20px;
   background-color: #185180;
   box-shadow: 3px 3px 10px #000000;
   border-radius: 5px;
   padding: 8px;
-  color: white;
 }
 
 .btnSuivant {
@@ -121,6 +121,46 @@ footer {
 }
 .btnPrece {
   margin-left: 15px;
+}
+
+.popUp {
+  position: fixed;
+  bottom: 0;
+  right: 20%;
+  transform: translateY(125px);
+}
+
+/* --------- */
+/*  Emotika  */
+/* --------- */
+
+.imgemo {
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.pdf {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.infographie {
+  margin: auto;
+  margin-top: 5px;
+}
+
+.video {
+  display: flex;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.gift {
+  display: flex;
+  margin: auto;
+  width: 100%;
 }
 
 /* ---------- */

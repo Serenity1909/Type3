@@ -13,10 +13,6 @@
   border-radius: 30px;
 }
 
-.logo:hover {
-  background-color: #61a0c5;
-  transition: 0.3s ease;
-}
 .wrapper {
   background: #185180;
   position: static;
@@ -166,6 +162,7 @@ nav .content .links {
     padding: 0 20px;
   }
   nav .content .links {
+    margin-top: -10px;
     margin-left: 30px;
   }
   .content .links li a {
@@ -289,7 +286,7 @@ nav .content .links {
 
 @media (min-width: 781px) and (max-width: 979px) {
   .links {
-    transform: translateY(23.5%);
+    transform: translateY(13%);
   }
   h1 {
     font-size: 20px;
