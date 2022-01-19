@@ -44,9 +44,11 @@ footer {
 /* ----- */
 
 .texto {
-  /* font-family: Century Gothic*/
   text-align: justify;
-  margin: 25px;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: auto;
   font-size: 20px;
   line-height: 35px;
 }
@@ -123,11 +125,95 @@ footer {
   margin-left: 15px;
 }
 
+.bubble-text {
+  background: #139ee0;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 3px;
+  width: 25%;
+  position: fixed;
+  right: 1%;
+  bottom: 28%;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.bubble-text::after {
+  content: "";
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #139ee0;
+  position: absolute;
+}
+
 .popUp {
   position: fixed;
   bottom: 0;
   right: 20%;
   transform: translateY(125px);
+  transition: 0.5s;
+}
+
+/* ----------- */
+/*  Snoezelen  */
+/* ----------- */
+
+.snoez {
+  display: flex;
+  margin: auto;
+}
+
+.imgSnoez {
+  margin: 10px;
+  border-radius: 5000px;
+  box-shadow: 12px 12px 10px 1px rgba(0, 0, 255, 0.2);
+}
+
+.slider {
+  overflow: hidden;
+  margin-left: 385px;
+  margin-right: 385px;
+}
+
+div.slides {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: calc(300px * 4);
+  height: 500px;
+  -webkit-animation: glisse 30s infinite;
+  position: relative;
+}
+
+div.slides:hover {
+  -webkit-animation-play-state: paused;
+}
+
+@-webkit-keyframes glisse {
+  1% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-1140px);
+  }
+  40% {
+    transform: translateX(-2640px);
+  }
+  60% {
+    transform: translateX(-3920px);
+  }
+  80% {
+    transform: translateX(-5400px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.caption {
+  margin-top: -70px;
+  margin-left: 20px;
+  opacity: 0.5;
 }
 
 /* --------- */
@@ -161,6 +247,18 @@ footer {
   display: flex;
   margin: auto;
   width: 100%;
+  margin-bottom: 3px;
+}
+
+/* ---------------- */
+/* carteMentale.pdf */
+/* ---------------- */
+
+.carteMental {
+  display: flex;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /* ---------- */

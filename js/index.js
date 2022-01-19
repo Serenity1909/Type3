@@ -3,8 +3,13 @@ const link = document.querySelector(".links");
 const main = document.querySelector(".main");
 console.log(window);
 
+const bulle = document.querySelector(".bubble-text");
+const popup = document.querySelector(".popUp");
+
+// fixe menubar onscroll
 window.addEventListener("scroll", () => {
   if (window.scrollY > 90) {
+    menu.style.zIndex = "10";
     menu.style.top = "0";
     menu.style.position = "fixed";
     main.style.paddingTop = "90px";
@@ -21,4 +26,15 @@ window.addEventListener("scroll", () => {
       link.style.transition = "0.3s";
     }
   }
+});
+
+// info popUp interview
+popup.addEventListener("mouseenter", () => {
+  popup.style.transform = "translateY(-20px)";
+  bulle.style.opacity = "1";
+});
+
+popup.addEventListener("mouseout", () => {
+  popup.style.transform = "translateY(125px)";
+  bulle.style.opacity = "0";
 });
