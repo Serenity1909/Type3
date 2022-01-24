@@ -136,11 +136,17 @@ footer {
   padding: 7px 15px;
   border-radius: 3px;
   width: 25%;
+  min-width: 300px;
   position: fixed;
   right: 1%;
   bottom: 28%;
   transition: 0.5s;
   opacity: 0;
+  z-index: 100;
+}
+
+.size {
+  font-size: 2vh;
 }
 
 .bubble-text::after {
@@ -176,8 +182,8 @@ footer {
 
 .slider {
   overflow: hidden;
-  margin-left: 385px;
-  margin-right: 385px;
+  width: 1100px;
+  margin: auto;
 }
 
 div.slides {
