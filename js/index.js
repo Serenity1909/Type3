@@ -30,11 +30,11 @@ window.addEventListener("scroll", () => {
 
 // info popUp interview
 popup.addEventListener("mouseenter", () => {
-  popup.style.transform = "translateY(-20px)";
+  popup.style.transform = "translateY(-50px)";
   bulle.style.opacity = "1";
 });
 
 popup.addEventListener("mouseout", () => {
-  popup.style.transform = "translateY(125px)";
+  popup.style.transform = "translateY(110px)";
   bulle.style.opacity = "0";
 });
