@@ -26,6 +26,12 @@ header {
   padding: 50px;
 }
 
+.caracteriel {
+  display: flex;
+  margin: auto;
+  margin-top: -250px;
+}
+
 footer {
   padding: 5px;
   background-color: #61a0c5;
@@ -73,11 +79,8 @@ footer {
 }
 
 .ajustimg {
-  transform: translateY(-110px) translateX(5px);
-}
-
-.ajustimg1 {
-  transform: translateY(-170px) translateX(5px);
+  width: 1278px;
+  transform: translateY(-100px) translateX(6.5px);
 }
 
 .figcaptiontdah {
@@ -103,6 +106,15 @@ p {
 
 .italik {
   font-style: italic;
+  background-color: aquamarine;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.testy {
+  margin: auto;
 }
 
 .premier {
